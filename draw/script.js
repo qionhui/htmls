@@ -26,10 +26,10 @@ window.onload = function () {
         setInterval(function () {
             var ll = document.getElementsByTagName("li");
             r+=90;
-            for(var i = 0;i < 300;i++){
+            for(var i = 0;i < 50;i++){
                 if(ll[i].style){
                     // ll[i].style.transform = "rotateX("+r+"deg)";
-                    dh(i,r,i*5);
+                    dh(i,r,i*10);
                 }
             }
 
@@ -40,7 +40,7 @@ window.onload = function () {
             document.getElementsByTagName("li")[i].style.transform = "rotateX("+r+"deg)";
         },time);
     }
-    play(300);
+    play(50);
     start();
 
 

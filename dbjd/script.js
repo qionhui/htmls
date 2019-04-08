@@ -6,4 +6,8 @@ window.onload = function () {
         if(l <= -800)l = 0;
         imgTop.style.left = l+"%";
     },2000);
+
+    $(window).scroll(function () {
+        $("footer").css("top",$(window).scrollTop()+$(window).height() + "px");
+    })
 }

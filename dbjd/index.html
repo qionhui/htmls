@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>多快好省，购物上京东！</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <script>
+        var fun = function (doc, win) {
+            var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+                    docEl.style.fontSize = 34 * (clientWidth / 640) + 'px';
+                };
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+            doc.addEventListener('DOMContentLoaded', recalc, false);
+        }
+        fun(document, window);
+
+    </script>
+    <script src="script.js"></script>
+
+</head>
+<body>
+    <header>
+        <div class="top">
+            <div class="btn"></div>
+            <from>
+                <div class="search">
+                    <div class="JD"><img src="imgs/jd.png" alt=""></div>
+                    <div class="ss"></div>
+                    <input id="Htext" type="text" placeholder="PLUS享佳沛奇异果满269减88">
+                </div>
+            </from>
+        </div>
+        <div class="img">
+            <ul class="noneUl">
+                <li><a href="#"><img src="imgs/l1.jpg" alt=""></a></li>
+                <li><a href="#"><img src="imgs/l2.jpg" alt=""></a></li>
+                <li><a href="#"><img src="imgs/l3.jpg" alt=""></a></li>
+                <li><a href="#"><img src="imgs/l4.jpg" alt=""></a></li>
+                <li><a href="#"><img src="imgs/l5.jpg" alt=""></a></li>
+                <li><a href="#"><img src="imgs/l6.jpg" alt=""></a></li>
+                <li><a href="#"><img src="imgs/l7.jpg" alt=""></a></li>
+                <li><a href="#"><img src="imgs/l8.jpg" alt=""></a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="box1">
+        <img src="imgs/ccfba8eea34b9062.jpg!q70.jpg" alt="">
+    </div>
+    <div class="box2">
+        <div><img src="imgs/c1.png" alt=""><p>京东超市</p></div>
+        <div><img src="imgs/c2.png" alt=""><p>京东超市</p></div>
+        <div><img src="imgs/c3.png" alt=""><p>京东超市</p></div>
+        <div><img src="imgs/c4.png" alt=""><p>京东超市</p></div>
+        <div><img src="imgs/c5.png" alt=""><p>京东超市</p></div>
+        <div><img src="imgs/c6.png" alt=""><p>京东超市</p></div>
+        <div><img src="imgs/c7.png" alt=""><p>京东超市</p></div>
+        <div><img src="imgs/c8.png" alt=""><p>京东超市</p></div>
+        <div><img src="imgs/c9.png" alt=""><p>京东超市</p></div>
+        <div><img src="imgs/c10.png" alt=""><p>京东超市</p></div>
+    </div>
+    <div class="box3">
+        <img src="imgs/5aa8935bN94e31ff6.jpg" alt="">
+        <div class="cen"></div>
+        <div class="right">
+            <a href="#">更多</a>
+        </div>
+    </div>
+    <div class="box4">
+        <img src="imgs/img1.jpg" alt=""><img src="imgs/img2.jpg" alt=""><img src="imgs/img3.jpg" alt="">
+    </div>
+    <div class="box5">
+        <div class="top">
+            <div class="left">京东秒杀</div>
+            <div class="cen"><span>18点场</span></div>
+            <div class="right">
+                <a href="#">更多秒杀</a>
+                <div class="re">
+                    <ui class="noneUl">
+                        <li><img src="imgs/5af063abN7a200ba1.jpg" alt=""></li>
+                        <li><img src="imgs/5af063abN7a200ba1.jpg" alt=""></li>
+                        <li><img src="imgs/5af063abN7a200ba1.jpg" alt=""></li>
+                        <li><img src="imgs/5af063abN7a200ba1.jpg" alt=""></li>
+                        <li><img src="imgs/5af063abN7a200ba1.jpg" alt=""></li>
+                        <li><img src="imgs/5af063abN7a200ba1.jpg" alt=""></li>
+                        <li><img src="imgs/5af063abN7a200ba1.jpg" alt=""></li>
+                        <li><img src="imgs/5af063abN7a200ba1.jpg" alt=""></li>
+                        <li><img src="imgs/5af063abN7a200ba1.jpg" alt=""></li>
+                        <li><img src="imgs/5af063abN7a200ba1.jpg" alt=""></li>
+                    </ui>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>
